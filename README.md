@@ -16,7 +16,7 @@
 
 This repository contains the implementation and experimental code for our paper on using k-NN geometric features to detect high-uncertainty regions in AI embedding spaces, with applications to AI safety.
 
-**Key Finding:** Geometric features provide **4.8× larger improvements** on borderline (high-uncertainty) cases compared to safe cases, demonstrating targeted value where baseline methods struggle most.
+**Key Finding:** Corrected evaluation with proper train/test splits shows significant improvements in borderline and unsafe zones, demonstrating the value of geometric features in high-uncertainty regions.
 
 ---
 
@@ -39,7 +39,7 @@ python experiments/generate_publication_plots_v2.py
 
 AI models exhibit unpredictable failure modes near decision boundaries, where uncertainty is highest and safety risks concentrate. We propose seven k-NN geometric features and introduce boundary-stratified evaluation to assess performance separately on safe, borderline, and unsafe regions.
 
-Testing on sentiment classification (N=1099), geometric features provide +3.8% R² improvement on borderline cases vs +0.8% on safe cases. The consensus top feature, `knn_std_distance`, shows amplified correlation on borderline cases (r=+0.399 vs r=+0.286 overall). A supplementary behavioral flip experiment validates that geometry predicts robustness under paraphrasing (AUC=0.707, 23% better than boundary distance alone).
+Corrected evaluation with proper train/test splits confirms that geometric features provide significant predictive improvements in high-uncertainty regions, validating their use for AI safety applications.
 
 **Full paper:** [`docs/TECHNICAL_REPORT.md`](docs/TECHNICAL_REPORT.md)
 
@@ -84,11 +84,11 @@ geometric_safety_features/
 
 | Zone | N | Baseline R² | Geometry R² | Improvement | Significance |
 |------|---|-------------|-------------|-------------|--------------|
-| **BORDERLINE** | 79 | 0.575 | 0.597 | **+3.8%** | p < 0.001 *** |
-| UNSAFE | 74 | 0.680 | 0.694 | +2.1% | p < 0.001 *** |
-| SAFE | 67 | 0.604 | 0.609 | +0.8% | p < 0.001 *** |
+| **BORDERLINE** | ~79 | 0.233 ± 0.189 | 0.254 ± 0.181 | +12.5% | p < 0.001 *** |
+| UNSAFE | ~74 | 0.378 ± 0.213 | 0.396 ± 0.207 | +11.4% | p < 0.001 *** |
+| SAFE | ~67 | 0.263 ± 0.204 | 0.252 ± 0.204 | -10.5% | p = 0.081 |
 
-**Key Finding:** Geometry provides **4.8× larger improvement** on borderline vs safe cases.
+**Key Finding:** Corrected analysis reveals significant predictive improvements in high-uncertainty regions, supporting geometric features for AI safety.
 
 ### Behavioral Flip Validation
 
@@ -261,7 +261,7 @@ If you use this code or findings in your research, please cite:
 
 1. **Boundary-stratified evaluation methodology** revealing targeted improvements in high-uncertainty regions
 
-2. **7 k-NN geometric features** with validated +3.8% improvement on borderline cases (4.8× larger than safe)
+2. **7 k-NN geometric features** with validated +12.5% improvement on borderline cases
 
 3. **SVD-based curvature computation** solving numerical instability for k << D
 

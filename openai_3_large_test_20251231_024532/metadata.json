@@ -1,0 +1,14 @@
+{
+  "timestamp": "20251231_024532",
+  "embedder": "openai_3_large",
+  "model": "text-embedding-3-large",
+  "n_samples": 1099,
+  "embedding_dim": 256,
+  "cost_estimate": {
+    "n_texts": 1099,
+    "estimated_tokens": 10690,
+    "estimated_cost_usd": 0.0013896999999999998,
+    "model": "text-embedding-3-large",
+    "cost_per_1k_tokens": 0.00013
+  }
+}
