@@ -61,9 +61,11 @@ geometric_safety_features/
 │       ├── __init__.py
 │       ├── bundle.py                  # GeometryBundle (main API)
 │       ├── features.py                # 7 k-NN geometric features
+│       ├── advanced_features.py       # Advanced features and baselines
 │       └── schema.py                  # Schema v2.0 specification
 ├── experiments/
 │   ├── boundary_sliced_evaluation.py  # Main experiment (Section 3.1)
+│   ├── evaluate_knn_derivation.py   # Evaluation of the manual k-NN derivation
 │   ├── analyze_feature_importance.py  # Feature analysis (Section 3.2)
 │   ├── generate_publication_plots_v2.py # Figure generation
 │   ├── behavioral_flip_*.py           # Supplementary experiment (5 scripts)
@@ -75,6 +77,28 @@ geometric_safety_features/
 └── data/
     └── README.md                       # Data availability statement
 ```
+
+---
+
+## Theoretical Grounding & Related Work
+
+Recent criticism highlighted a need for stronger theoretical justification and connection to established literature. The methods used in this repository are well-grounded in existing research on k-NN for out-of-distribution (OOD) and uncertainty detection.
+
+Key findings from a literature review include:
+
+- **k-NN Distance for OOD Detection:** Sun et al. (2022) provide strong theoretical and empirical evidence for using k-NN distance in deep feature spaces to detect OOD samples. They demonstrate significant improvements over other methods, such as those based on Mahalanobis distance, and emphasize the importance of high-quality, normalized embeddings for the success of k-NN-based approaches.
+- **k-NN Density Estimation:** Bahri et al. (2021) propose using k-NN density estimates on a classifier’s intermediate embeddings to detect OOD examples. They argue that this avoids the weaknesses of using softmax-based uncertainty and show that training with label smoothing improves the clusterability of embeddings, making k-NN density more effective.
+- **Mahalanobis Distance as a Baseline:** Class-conditional Mahalanobis distance is a strong, established baseline for OOD detection. However, it relies on the assumption that features for each class follow a Gaussian distribution, which may not always hold true for learned embeddings (Sun et al., 2022).
+- **Dimensionality and Feature Quality:** The performance of these methods is highly sensitive to the quality of the embeddings, the choice of `k` (the number of neighbors), and the dimensionality of the feature space. Wulz & Krispel (2025) show that dimensionality reduction can significantly impact performance.
+
+This body of work confirms that using k-NN-based geometric features is a credible and robust approach for identifying uncertainty in AI models. This repository contributes to this area by providing a practical implementation, a boundary-stratified evaluation methodology, and a set of validated geometric features.
+
+### Key References
+
+1.  **Sun, Y., Ming, Y., Zhu, X., & Li, Y. (2022).** *Out-of-Distribution Detection with Deep Nearest Neighbors.* arXiv preprint arXiv:2204.06507.
+2.  **Bahri, D., Jiang, H., & Tay, Y. (2021).** *Label Smoothed Embedding Hypothesis for Out-of-Distribution Detection.* arXiv preprint arXiv:2102.13100.
+3.  **Wulz, S., & Krispel, U. (2025).** *Detecting Out-Of-Distribution Labels in Image Datasets With Pre-trained Networks.* Journal of WSCG.
+4.  **Lee, K., Lee, K., Lee, H., & Shin, J. (2018).** *A Simple Unified Framework for Detecting Out-of-Distribution Samples and Adversarial Attacks.* In Advances in Neural Information Processing Systems (NeurIPS).
 
 ---
 
