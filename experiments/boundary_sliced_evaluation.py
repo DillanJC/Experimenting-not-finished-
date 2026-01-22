@@ -72,7 +72,7 @@ def compute_geometry_features(embeddings, boundary_distances):
 
     # Compute geometry
     bundle = GeometryBundle(reference, k=50)
-    results = bundle.compute(queries, boundary_distances=query_boundaries)
+    results = bundle.compute(queries)
 
     # Extract feature matrix
     features = bundle.get_feature_matrix(results)

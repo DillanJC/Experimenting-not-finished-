@@ -12,7 +12,7 @@ authors = [
 ]
 license = {text = "MIT"}
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Science/Research",
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
     "Topic :: Scientific/Engineering :: Mathematics",
@@ -42,8 +42,10 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/DillanJC/geometric_safety_features"
+Documentation = "https://github.com/DillanJC/geometric_safety_features#readme"
 Repository = "https://github.com/DillanJC/geometric_safety_features"
 Issues = "https://github.com/DillanJC/geometric_safety_features/issues"
+Changelog = "https://github.com/DillanJC/geometric_safety_features/blob/main/CHANGELOG.md"
 
 [tool.setuptools.packages.find]
 where = ["."]
