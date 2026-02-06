@@ -1,0 +1,8 @@
+{
+  "strategy": "random",
+  "poison_rate": 0.05,
+  "n_poisoned": 54,
+  "n_pos_flipped": 21,
+  "n_neg_flipped": 33,
+  "random_seed": 42
+}

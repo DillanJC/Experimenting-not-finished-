@@ -1,0 +1,8 @@
+{
+  "strategy": "boundary",
+  "poison_rate": 0.05,
+  "n_poisoned": 54,
+  "n_pos_flipped": 25,
+  "n_neg_flipped": 29,
+  "random_seed": 42
+}

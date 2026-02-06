@@ -1,0 +1,8 @@
+{
+  "strategy": "cluster",
+  "poison_rate": 0.05,
+  "n_poisoned": 54,
+  "n_pos_flipped": 0,
+  "n_neg_flipped": 54,
+  "random_seed": 42
+}

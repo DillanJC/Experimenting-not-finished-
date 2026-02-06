@@ -1,0 +1,326 @@
+{
+  "random": {
+    "per_feature": {
+      "knn_mean_distance": {
+        "auc": 0.6145833333333334,
+        "direction": "higher",
+        "poison_mean": 0.6850128124157587,
+        "clean_mean": 0.6567459361484418
+      },
+      "knn_std_distance": {
+        "auc": 0.5108173076923076,
+        "direction": "lower",
+        "poison_mean": 0.1299516816313068,
+        "clean_mean": 0.13076701439702168
+      },
+      "knn_min_distance": {
+        "auc": 0.6137820512820513,
+        "direction": "higher",
+        "poison_mean": 0.4124896824359894,
+        "clean_mean": 0.37440776072729093
+      },
+      "knn_max_distance": {
+        "auc": 0.6025641025641025,
+        "direction": "higher",
+        "poison_mean": 0.8543661187092463,
+        "clean_mean": 0.8251607432388343
+      },
+      "local_curvature": {
+        "auc": 0.5404647435897436,
+        "direction": "lower",
+        "poison_mean": 0.013597530080005527,
+        "clean_mean": 0.013781129539263649
+      },
+      "ridge_proximity": {
+        "auc": 0.5384615384615384,
+        "direction": "lower",
+        "poison_mean": 0.1919011753052473,
+        "clean_mean": 0.2019600449846341
+      },
+      "dist_to_ref_nearest": {
+        "auc": 0.6137820512820513,
+        "direction": "higher",
+        "poison_mean": 0.4124896824359894,
+        "clean_mean": 0.37440776072729093
+      },
+      "local_gradient_magnitude": {
+        "auc": 0.6526442307692308,
+        "direction": "higher",
+        "poison_mean": 0.5010731841127077,
+        "clean_mean": 0.4719953303440259
+      },
+      "turbulence_index": {
+        "auc": 0.5885416666666667,
+        "direction": "lower",
+        "poison_mean": 0.24400703683349348,
+        "clean_mean": 0.2553210003344858
+      },
+      "thermal_gradient": {
+        "auc": 0.5106169871794872,
+        "direction": "lower",
+        "poison_mean": 0.12665704637765884,
+        "clean_mean": 0.1378859278674309
+      },
+      "vorticity": {
+        "auc": 0.6031650641025641,
+        "direction": "higher",
+        "poison_mean": 0.0045587297063320875,
+        "clean_mean": 0.004417596902035607
+      },
+      "d_eff": {
+        "auc": 0.5651041666666666,
+        "direction": "higher",
+        "poison_mean": 16.666666666666668,
+        "clean_mean": 16.264423076923077
+      },
+      "spectral_entropy": {
+        "auc": 0.5322516025641026,
+        "direction": "higher",
+        "poison_mean": 2.6287944118181863,
+        "clean_mean": 2.5939611609165487
+      },
+      "participation_ratio": {
+        "auc": 0.5390625,
+        "direction": "higher",
+        "poison_mean": 7.9848335186640425,
+        "clean_mean": 7.554670583743316
+      }
+    },
+    "combined_top3": {
+      "roc_auc": 0.6542467948717948,
+      "pr_auc": 0.09505364599932009,
+      "optimal_threshold": 0.6153090296129408,
+      "optimal_tpr": 0.5,
+      "optimal_fpr": 0.16826923076923078,
+      "optimal_precision": 0.14634146341463414,
+      "optimal_f1": 0.22641509433962262
+    },
+    "topology_only": {
+      "roc_auc": 0.539463141025641,
+      "pr_auc": 0.0841773328932938,
+      "optimal_threshold": 0.8127827643361318,
+      "optimal_tpr": 0.3333333333333333,
+      "optimal_fpr": 0.08653846153846154,
+      "optimal_precision": 0.18181818181818182,
+      "optimal_f1": 0.23529411764705885
+    },
+    "n_poisoned": 12,
+    "n_clean": 208
+  },
+  "boundary": {
+    "per_feature": {
+      "knn_mean_distance": {
+        "auc": 0.6792279411764706,
+        "direction": "lower",
+        "poison_mean": 0.6263089776039124,
+        "clean_mean": 0.6607959060107961
+      },
+      "knn_std_distance": {
+        "auc": 0.6688112745098039,
+        "direction": "higher",
+        "poison_mean": 0.16242033196613193,
+        "clean_mean": 0.12823644050342195
+      },
+      "knn_min_distance": {
+        "auc": 0.6537990196078431,
+        "direction": "lower",
+        "poison_mean": 0.32705677300691605,
+        "clean_mean": 0.38036167672743987
+      },
+      "knn_max_distance": {
+        "auc": 0.5597426470588236,
+        "direction": "lower",
+        "poison_mean": 0.8120930083096027,
+        "clean_mean": 0.827903626888406
+      },
+      "local_curvature": {
+        "auc": 0.5456495098039216,
+        "direction": "lower",
+        "poison_mean": 0.013250971853267401,
+        "clean_mean": 0.013811910566052093
+      },
+      "ridge_proximity": {
+        "auc": 0.7028186274509803,
+        "direction": "higher",
+        "poison_mean": 0.25780936423689127,
+        "clean_mean": 0.19698800800331667
+      },
+      "dist_to_ref_nearest": {
+        "auc": 0.6537990196078431,
+        "direction": "lower",
+        "poison_mean": 0.32705677300691605,
+        "clean_mean": 0.38036167672743987
+      },
+      "local_gradient_magnitude": {
+        "auc": 0.5818014705882353,
+        "direction": "lower",
+        "poison_mean": 0.4609473869204521,
+        "clean_mean": 0.4745722976969738
+      },
+      "turbulence_index": {
+        "auc": 0.568014705882353,
+        "direction": "lower",
+        "poison_mean": 0.2455879899904444,
+        "clean_mean": 0.25541884643003854
+      },
+      "thermal_gradient": {
+        "auc": 0.7173713235294118,
+        "direction": "higher",
+        "poison_mean": 0.31717225164175034,
+        "clean_mean": 0.12316373297396828
+      },
+      "vorticity": {
+        "auc": 0.6106004901960784,
+        "direction": "lower",
+        "poison_mean": 0.004286493553081527,
+        "clean_mean": 0.004436181447304347
+      },
+      "d_eff": {
+        "auc": 0.7852328431372548,
+        "direction": "lower",
+        "poison_mean": 14.9375,
+        "clean_mean": 16.392156862745097
+      },
+      "spectral_entropy": {
+        "auc": 0.7438725490196079,
+        "direction": "lower",
+        "poison_mean": 2.4176322668790817,
+        "clean_mean": 2.6098398928548776
+      },
+      "participation_ratio": {
+        "auc": 0.7270220588235294,
+        "direction": "lower",
+        "poison_mean": 5.775558829307556,
+        "clean_mean": 7.719512462615967
+      }
+    },
+    "combined_top3": {
+      "roc_auc": 0.7643995098039216,
+      "pr_auc": 0.17013555077142775,
+      "optimal_threshold": 0.5429441322495042,
+      "optimal_tpr": 0.9375,
+      "optimal_fpr": 0.49019607843137253,
+      "optimal_precision": 0.13043478260869565,
+      "optimal_f1": 0.22900763358778628
+    },
+    "topology_only": {
+      "roc_auc": 0.7352941176470588,
+      "pr_auc": 0.15620199282309355,
+      "optimal_threshold": 0.5287019126599706,
+      "optimal_tpr": 0.9375,
+      "optimal_fpr": 0.5392156862745098,
+      "optimal_precision": 0.12,
+      "optimal_f1": 0.21276595744680846
+    },
+    "n_poisoned": 16,
+    "n_clean": 204
+  },
+  "cluster": {
+    "per_feature": {
+      "knn_mean_distance": {
+        "auc": 0.7145866245392312,
+        "direction": "lower",
+        "poison_mean": 0.6211016244358487,
+        "clean_mean": 0.6598739044926177
+      },
+      "knn_std_distance": {
+        "auc": 0.8388625592417062,
+        "direction": "higher",
+        "poison_mean": 0.18442520168092516,
+        "clean_mean": 0.128431906914824
+      },
+      "knn_min_distance": {
+        "auc": 0.7340705634544497,
+        "direction": "lower",
+        "poison_mean": 0.3002975732088089,
+        "clean_mean": 0.3797346552683844
+      },
+      "knn_max_distance": {
+        "auc": 0.6061084781463928,
+        "direction": "higher",
+        "poison_mean": 0.8449615240097046,
+        "clean_mean": 0.8259771293938443
+      },
+      "local_curvature": {
+        "auc": 0.6924697209057399,
+        "direction": "higher",
+        "poison_mean": 0.014946102268166013,
+        "clean_mean": 0.013720997083949816
+      },
+      "ridge_proximity": {
+        "auc": 0.85202738283307,
+        "direction": "higher",
+        "poison_mean": 0.2972663707203335,
+        "clean_mean": 0.19732277783878607
+      },
+      "dist_to_ref_nearest": {
+        "auc": 0.7340705634544497,
+        "direction": "lower",
+        "poison_mean": 0.3002975732088089,
+        "clean_mean": 0.3797346552683844
+      },
+      "local_gradient_magnitude": {
+        "auc": 0.8404423380726698,
+        "direction": "lower",
+        "poison_mean": 0.4297004242738088,
+        "clean_mean": 0.47545309527225404
+      },
+      "turbulence_index": {
+        "auc": 0.6245392311743023,
+        "direction": "higher",
+        "poison_mean": 0.2658593665568099,
+        "clean_mean": 0.2542280484007758
+      },
+      "thermal_gradient": {
+        "auc": 0.7830437072143234,
+        "direction": "higher",
+        "poison_mean": 0.4297004242738088,
+        "clean_mean": 0.12480025466584481
+      },
+      "vorticity": {
+        "auc": 0.5576619273301737,
+        "direction": "higher",
+        "poison_mean": 0.00446459904520048,
+        "clean_mean": 0.004423618581481455
+      },
+      "d_eff": {
+        "auc": 0.9389152185360716,
+        "direction": "lower",
+        "poison_mean": 13.88888888888889,
+        "clean_mean": 16.38862559241706
+      },
+      "spectral_entropy": {
+        "auc": 0.9447077409162717,
+        "direction": "lower",
+        "poison_mean": 2.2135927942064075,
+        "clean_mean": 2.612166442012335
+      },
+      "participation_ratio": {
+        "auc": 0.9473407056345445,
+        "direction": "lower",
+        "poison_mean": 4.310240851508246,
+        "clean_mean": 7.717522824545042
+      }
+    },
+    "combined_top3": {
+      "roc_auc": 0.9510268562401263,
+      "pr_auc": 0.280537773210187,
+      "optimal_threshold": 0.8427104822517034,
+      "optimal_tpr": 1.0,
+      "optimal_fpr": 0.0995260663507109,
+      "optimal_precision": 0.3,
+      "optimal_f1": 0.4615384615384615
+    },
+    "topology_only": {
+      "roc_auc": 0.9441811479726171,
+      "pr_auc": 0.24724143960929978,
+      "optimal_threshold": 0.8863747304181933,
+      "optimal_tpr": 1.0,
+      "optimal_fpr": 0.08056872037914692,
+      "optimal_precision": 0.34615384615384615,
+      "optimal_f1": 0.5142857142857142
+    },
+    "n_poisoned": 9,
+    "n_clean": 211
+  }
+}

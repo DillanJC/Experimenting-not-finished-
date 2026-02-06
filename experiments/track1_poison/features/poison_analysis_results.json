@@ -1,0 +1,464 @@
+{
+  "random": {
+    "geometry": {
+      "knn_mean_distance": {
+        "clean_mean": 0.6567459361484418,
+        "poison_mean": 0.6850128124157587,
+        "delta": 0.028266876267316943,
+        "p_value": 0.11019795788473805,
+        "significant": "False"
+      },
+      "knn_std_distance": {
+        "clean_mean": 0.13076701439702168,
+        "poison_mean": 0.1299516816313068,
+        "delta": -0.0008153327657148823,
+        "p_value": 0.9532922138233816,
+        "significant": "False"
+      },
+      "knn_min_distance": {
+        "clean_mean": 0.37440776072729093,
+        "poison_mean": 0.4124896824359894,
+        "delta": 0.03808192170869845,
+        "p_value": 0.20791953035389774,
+        "significant": "False"
+      },
+      "knn_max_distance": {
+        "clean_mean": 0.8251607432388343,
+        "poison_mean": 0.8543661187092463,
+        "delta": 0.02920537547041202,
+        "p_value": 0.11352777652686259,
+        "significant": "False"
+      },
+      "local_curvature": {
+        "clean_mean": 0.013781129539263649,
+        "poison_mean": 0.013597530080005527,
+        "delta": -0.00018359945925812242,
+        "p_value": 0.8037652912371712,
+        "significant": "False"
+      },
+      "ridge_proximity": {
+        "clean_mean": 0.2019600449846341,
+        "poison_mean": 0.1919011753052473,
+        "delta": -0.010058869679386795,
+        "p_value": 0.667793741538921,
+        "significant": "False"
+      },
+      "dist_to_ref_nearest": {
+        "clean_mean": 0.37440776072729093,
+        "poison_mean": 0.4124896824359894,
+        "delta": 0.03808192170869845,
+        "p_value": 0.20791953035389774,
+        "significant": "False"
+      },
+      "local_gradient_magnitude": {
+        "clean_mean": 0.4719953303440259,
+        "poison_mean": 0.5010731841127077,
+        "delta": 0.029077853768681827,
+        "p_value": 0.029643170121117342,
+        "significant": "True"
+      },
+      "turbulence_index": {
+        "clean_mean": 0.2553210003344858,
+        "poison_mean": 0.24400703683349348,
+        "delta": -0.011313963500992313,
+        "p_value": 0.3683633850644126,
+        "significant": "False"
+      },
+      "thermal_gradient": {
+        "clean_mean": 0.1378859278674309,
+        "poison_mean": 0.12665704637765884,
+        "delta": -0.011228881489772052,
+        "p_value": 0.8583124304293126,
+        "significant": "False"
+      },
+      "vorticity": {
+        "clean_mean": 0.004417596902035607,
+        "poison_mean": 0.0045587297063320875,
+        "delta": 0.00014113280429648052,
+        "p_value": 0.2605958462051684,
+        "significant": "False"
+      },
+      "d_eff": {
+        "clean_mean": 16.264423076923077,
+        "poison_mean": 16.666666666666668,
+        "delta": 0.4022435897435912,
+        "p_value": 0.3715528960185298,
+        "significant": "False"
+      },
+      "spectral_entropy": {
+        "clean_mean": 2.5939611609165487,
+        "poison_mean": 2.6287944118181863,
+        "delta": 0.03483325090163758,
+        "p_value": 0.5948329996081699,
+        "significant": "False"
+      },
+      "participation_ratio": {
+        "clean_mean": 7.554670583743316,
+        "poison_mean": 7.9848335186640425,
+        "delta": 0.43016293492072677,
+        "p_value": 0.559579050866596,
+        "significant": "False"
+      }
+    },
+    "svd_signatures": {
+      "class_0": {
+        "n_samples": 681,
+        "n_poisoned": 21,
+        "singular_values": [
+          7.690546989440918,
+          7.255566120147705,
+          6.027989864349365,
+          5.818258285522461,
+          5.355208873748779,
+          4.653256416320801,
+          4.125945568084717,
+          3.8909096717834473,
+          3.1690659523010254,
+          3.0948667526245117
+        ],
+        "outlier_scores": [
+          "0.5709835",
+          "0.3924668",
+          "0.31305814",
+          "1.1158969",
+          "0.76671207",
+          "0.031909745",
+          "0.48303393",
+          "0.52984107",
+          "0.08997468",
+          "0.33025324"
+        ],
+        "max_outlier_sv": 3,
+        "max_outlier_score": 1.1158969402313232
+      },
+      "class_1": {
+        "n_samples": 418,
+        "n_poisoned": 33,
+        "singular_values": [
+          6.218113422393799,
+          5.471992492675781,
+          4.947626113891602,
+          4.266842365264893,
+          4.007880210876465,
+          3.322256326675415,
+          3.2135846614837646,
+          2.963568687438965,
+          2.6190714836120605,
+          2.4233007431030273
+        ],
+        "outlier_scores": [
+          "0.054639373",
+          "0.21316074",
+          "0.5609232",
+          "1.2752631",
+          "0.7227071",
+          "0.3607515",
+          "1.1729095",
+          "0.5388131",
+          "0.69846934",
+          "0.1807832"
+        ],
+        "max_outlier_sv": 3,
+        "max_outlier_score": 1.2752630710601807
+      }
+    }
+  },
+  "boundary": {
+    "geometry": {
+      "knn_mean_distance": {
+        "clean_mean": 0.6607959060107961,
+        "poison_mean": 0.6263089776039124,
+        "delta": -0.03448692840688372,
+        "p_value": 0.02543225101799771,
+        "significant": "True"
+      },
+      "knn_std_distance": {
+        "clean_mean": 0.12823644050342195,
+        "poison_mean": 0.16242033196613193,
+        "delta": 0.034183891462709975,
+        "p_value": 0.004593706746923479,
+        "significant": "True"
+      },
+      "knn_min_distance": {
+        "clean_mean": 0.38036167672743987,
+        "poison_mean": 0.32705677300691605,
+        "delta": -0.05330490372052382,
+        "p_value": 0.043225634717923477,
+        "significant": "True"
+      },
+      "knn_max_distance": {
+        "clean_mean": 0.827903626888406,
+        "poison_mean": 0.8120930083096027,
+        "delta": -0.01581061857880328,
+        "p_value": 0.328095533621651,
+        "significant": "False"
+      },
+      "local_curvature": {
+        "clean_mean": 0.013811910566052093,
+        "poison_mean": 0.013250971853267401,
+        "delta": -0.0005609387127846911,
+        "p_value": 0.3849462897104601,
+        "significant": "False"
+      },
+      "ridge_proximity": {
+        "clean_mean": 0.19698800800331667,
+        "poison_mean": 0.25780936423689127,
+        "delta": 0.0608213562335746,
+        "p_value": 0.002720945946736315,
+        "significant": "True"
+      },
+      "dist_to_ref_nearest": {
+        "clean_mean": 0.38036167672743987,
+        "poison_mean": 0.32705677300691605,
+        "delta": -0.05330490372052382,
+        "p_value": 0.043225634717923477,
+        "significant": "True"
+      },
+      "local_gradient_magnitude": {
+        "clean_mean": 0.4745722976969738,
+        "poison_mean": 0.4609473869204521,
+        "delta": -0.01362491077652167,
+        "p_value": 0.24571667393220317,
+        "significant": "False"
+      },
+      "turbulence_index": {
+        "clean_mean": 0.25541884643003854,
+        "poison_mean": 0.2455879899904444,
+        "delta": -0.009830856439594138,
+        "p_value": 0.37142238860378196,
+        "significant": "False"
+      },
+      "thermal_gradient": {
+        "clean_mean": 0.12316373297396828,
+        "poison_mean": 0.31717225164175034,
+        "delta": 0.19400851866778207,
+        "p_value": 0.0003447061430321939,
+        "significant": "True"
+      },
+      "vorticity": {
+        "clean_mean": 0.004436181447304347,
+        "poison_mean": 0.004286493553081527,
+        "delta": -0.00014968789422281983,
+        "p_value": 0.1721307919791817,
+        "significant": "False"
+      },
+      "d_eff": {
+        "clean_mean": 16.392156862745097,
+        "poison_mean": 14.9375,
+        "delta": -1.4546568627450966,
+        "p_value": 0.00017553843774281057,
+        "significant": "True"
+      },
+      "spectral_entropy": {
+        "clean_mean": 2.6098398928548776,
+        "poison_mean": 2.4176322668790817,
+        "delta": -0.19220762597579588,
+        "p_value": 0.0006750099149253426,
+        "significant": "True"
+      },
+      "participation_ratio": {
+        "clean_mean": 7.719512462615967,
+        "poison_mean": 5.775558829307556,
+        "delta": -1.9439536333084106,
+        "p_value": 0.0023169338783581308,
+        "significant": "True"
+      }
+    },
+    "svd_signatures": {
+      "class_0": {
+        "n_samples": 689,
+        "n_poisoned": 25,
+        "singular_values": [
+          7.470824718475342,
+          7.155881404876709,
+          6.033878326416016,
+          5.756877422332764,
+          5.379444122314453,
+          4.695809841156006,
+          4.135589122772217,
+          3.991126298904419,
+          3.290013074874878,
+          3.10418963432312
+        ],
+        "outlier_scores": [
+          "0.19505017",
+          "0.11822202",
+          "0.5232803",
+          "0.53554356",
+          "0.53814334",
+          "0.25071108",
+          "0.6883439",
+          "1.7211065",
+          "1.047726",
+          "0.28584933"
+        ],
+        "max_outlier_sv": 7,
+        "max_outlier_score": 1.7211065292358398
+      },
+      "class_1": {
+        "n_samples": 410,
+        "n_poisoned": 29,
+        "singular_values": [
+          6.012550354003906,
+          5.5145673751831055,
+          4.74514627456665,
+          4.082849502563477,
+          3.951964855194092,
+          3.39630126953125,
+          3.1049370765686035,
+          2.909184694290161,
+          2.6378097534179688,
+          2.31813645362854
+        ],
+        "outlier_scores": [
+          "0.47059327",
+          "0.6731401",
+          "0.15043446",
+          "0.66142035",
+          "0.70132226",
+          "0.6277054",
+          "1.5315948",
+          "0.6027969",
+          "0.3313309",
+          "1.1004025"
+        ],
+        "max_outlier_sv": 6,
+        "max_outlier_score": 1.5315947532653809
+      }
+    }
+  },
+  "cluster": {
+    "geometry": {
+      "knn_mean_distance": {
+        "clean_mean": 0.6598739044926177,
+        "poison_mean": 0.6211016244358487,
+        "delta": -0.038772280056769026,
+        "p_value": 0.055686420893182105,
+        "significant": "False"
+      },
+      "knn_std_distance": {
+        "clean_mean": 0.128431906914824,
+        "poison_mean": 0.18442520168092516,
+        "delta": 0.055993294766101154,
+        "p_value": 0.00037103073875810943,
+        "significant": "True"
+      },
+      "knn_min_distance": {
+        "clean_mean": 0.3797346552683844,
+        "poison_mean": 0.3002975732088089,
+        "delta": -0.0794370820595755,
+        "p_value": 0.021389589419493114,
+        "significant": "True"
+      },
+      "knn_max_distance": {
+        "clean_mean": 0.8259771293938443,
+        "poison_mean": 0.8449615240097046,
+        "delta": 0.018984394615860323,
+        "p_value": 0.3705061478189172,
+        "significant": "False"
+      },
+      "local_curvature": {
+        "clean_mean": 0.013720997083949816,
+        "poison_mean": 0.014946102268166013,
+        "delta": 0.0012251051842161968,
+        "p_value": 0.14717193313934382,
+        "significant": "False"
+      },
+      "ridge_proximity": {
+        "clean_mean": 0.19732277783878607,
+        "poison_mean": 0.2972663707203335,
+        "delta": 0.09994359288154744,
+        "p_value": 0.0001568523452440019,
+        "significant": "True"
+      },
+      "dist_to_ref_nearest": {
+        "clean_mean": 0.3797346552683844,
+        "poison_mean": 0.3002975732088089,
+        "delta": -0.0794370820595755,
+        "p_value": 0.021389589419493114,
+        "significant": "True"
+      },
+      "local_gradient_magnitude": {
+        "clean_mean": 0.47545309527225404,
+        "poison_mean": 0.4297004242738088,
+        "delta": -0.045752670998445266,
+        "p_value": 0.002704882149668894,
+        "significant": "True"
+      },
+      "turbulence_index": {
+        "clean_mean": 0.2542280484007758,
+        "poison_mean": 0.2658593665568099,
+        "delta": 0.011631318156034132,
+        "p_value": 0.4199623343338369,
+        "significant": "False"
+      },
+      "thermal_gradient": {
+        "clean_mean": 0.12480025466584481,
+        "poison_mean": 0.4297004242738088,
+        "delta": 0.30490016960796396,
+        "p_value": 1.5670470109529495e-05,
+        "significant": "True"
+      },
+      "vorticity": {
+        "clean_mean": 0.004423618581481455,
+        "poison_mean": 0.00446459904520048,
+        "delta": 4.098046371902534e-05,
+        "p_value": 0.7759961792560636,
+        "significant": "False"
+      },
+      "d_eff": {
+        "clean_mean": 16.38862559241706,
+        "poison_mean": 13.88888888888889,
+        "delta": -2.4997367035281712,
+        "p_value": 6.43384166000891e-07,
+        "significant": "True"
+      },
+      "spectral_entropy": {
+        "clean_mean": 2.612166442012335,
+        "poison_mean": 2.2135927942064075,
+        "delta": -0.3985736478059274,
+        "p_value": 3.9873960579354426e-08,
+        "significant": "True"
+      },
+      "participation_ratio": {
+        "clean_mean": 7.717522824545042,
+        "poison_mean": 4.310240851508246,
+        "delta": -3.4072819730367954,
+        "p_value": 3.9903503876005455e-05,
+        "significant": "True"
+      }
+    },
+    "svd_signatures": {
+      "class_1": {
+        "n_samples": 460,
+        "n_poisoned": 54,
+        "singular_values": [
+          6.300541400909424,
+          5.693536758422852,
+          5.294362545013428,
+          4.705899238586426,
+          3.933908462524414,
+          3.8656816482543945,
+          3.194857358932495,
+          3.0635628700256348,
+          2.7831451892852783,
+          2.6761772632598877
+        ],
+        "outlier_scores": [
+          "0.4480006",
+          "0.43740818",
+          "2.122099",
+          "1.9355423",
+          "1.0333067",
+          "0.90991205",
+          "0.14551695",
+          "0.27284262",
+          "0.5733733",
+          "0.24993883"
+        ],
+        "max_outlier_sv": 2,
+        "max_outlier_score": 2.122098922729492
+      }
+    }
+  }
+}

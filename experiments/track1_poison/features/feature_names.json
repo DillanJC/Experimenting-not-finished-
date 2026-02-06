@@ -1,0 +1,1 @@
+["knn_mean_distance", "knn_std_distance", "knn_min_distance", "knn_max_distance", "local_curvature", "ridge_proximity", "dist_to_ref_nearest", "local_gradient_magnitude", "turbulence_index", "thermal_gradient", "vorticity", "d_eff", "spectral_entropy", "participation_ratio"]

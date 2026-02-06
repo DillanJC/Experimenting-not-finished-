@@ -1,0 +1,14 @@
+{
+  "model_name": "poisoned_cluster",
+  "train_accuracy": 0.9397042093287827,
+  "test_accuracy": 0.9363636363636364,
+  "n_train": 879,
+  "n_test": 220,
+  "coefficients_shape": [
+    1,
+    256
+  ],
+  "intercept": -0.40690862186094867,
+  "n_poisoned_train": 45,
+  "n_poisoned_test": 9
+}

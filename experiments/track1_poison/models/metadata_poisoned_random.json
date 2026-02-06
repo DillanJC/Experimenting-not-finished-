@@ -1,0 +1,14 @@
+{
+  "model_name": "poisoned_random",
+  "train_accuracy": 0.9385665529010239,
+  "test_accuracy": 0.9272727272727272,
+  "n_train": 879,
+  "n_test": 220,
+  "coefficients_shape": [
+    1,
+    256
+  ],
+  "intercept": -0.6493977893499622,
+  "n_poisoned_train": 42,
+  "n_poisoned_test": 12
+}

@@ -5,6 +5,66 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.0] - 2026-01-28
+
+### Added
+- **Equalizer Test: Applied Geometric Telemetry**
+  - `experiments/equalizer_test/reasoning_trace_logger.py` — reasoning trace with geometric monitoring
+  - `experiments/equalizer_test/build_reference_corpus.py` — diverse reference corpus builder
+  - `experiments/equalizer_test/visualize_trace.py` — trajectory visualization
+  - `experiments/equalizer_test/EQUALIZER_TEST_REPORT.md` — full experiment report
+
+### Key Results (Equalizer Test)
+- **PR tracks cognitive expansion**: TROUGH (8.01) at constraint, PEAK (9.82) at insight
+- **Insight pattern detected**: TROUGH -> EXPANSION -> DROP -> PEAK
+- **Novelty score**: 0.250 (moderate) for novel audio filter design
+- **11 reasoning steps parsed** from Claude's response to equalizer problem
+
+## [1.8.0] - 2026-01-28
+
+### Added
+- **Track 3: Meta-Cognitive / Geometric State API**
+  - `mirrorfield/api/state_monitor.py` — `GeometricStateMonitor` class
+  - `experiments/track3_api/live_detection_demo.py` — real-time agent simulation
+  - `experiments/track3_api/parallax_integration.py` — multi-AI pipeline integration
+  - `experiments/track3_api/TRACK3_REPORT.md` — full API documentation
+
+### Key Features (Track 3)
+- **Real-time self-monitoring**: `monitor.get_state(embedding)` returns state, flags, features
+- **Batch analysis**: G ratio and CV differentiate clean (0.50, 0.31) from poison (0.95, 0.03)
+- **Modulation advice**: Actionable suggestions for agent behavior modification
+- **Integration patterns**: LangChain callbacks, LlamaIndex handlers, Parallax wrapper
+
+## [1.7.0] - 2026-01-28
+
+### Added
+- **Track 2: Architectural Insight & Physics Analogies**
+  - `experiments/track2_physics/lambda_run.py` — G ratio uniformity analysis
+  - `experiments/track2_physics/decoherence_chamber.py` — multi-scale entropy evolution
+  - `experiments/track2_physics/TRACK2_REPORT.md` — full experimental report
+
+### Key Results (Track 2)
+- **Lambda Run**: Cluster-poisoned samples show G = 0.95 (vs 0.50 for clean) — uniformly constrained geometry
+- **Coefficient of Variation**: CV = 0.033 for poison vs 0.326 for clean — 10x less variation
+- **Decoherence Chamber**: Poisoned samples have lower entropy at ALL 7 depth levels (8-256 dims)
+- **Physics analogy validated**: Poisoning induces "condensate-like" uniform geometry
+
+## [1.6.0] - 2026-01-28
+
+### Added
+- **Track 1: Poison Detection Experiment** — validates geometric features for backdoor detection
+  - `experiments/track1_poison/create_poisoned_dataset.py` — label-flip backdoor injection
+  - `experiments/track1_poison/train_classifiers.py` — clean vs poisoned model training
+  - `experiments/track1_poison/compute_geometry.py` — geometric feature analysis
+  - `experiments/track1_poison/detect_poison.py` — detection rule with AUC evaluation
+  - `experiments/track1_poison/TRACK1_REPORT.md` — full experimental report
+
+### Key Results (Track 1)
+- **Cluster poisoning**: ROC-AUC = 0.947 using `participation_ratio` alone
+- **Boundary poisoning**: ROC-AUC = 0.785 using `d_eff`
+- **Topology features detect poisoning**: Same features that predict behavioral instability also identify poisoned samples
+- **Constrained geometry = poison signature**: Poisoned samples show LOWER participation_ratio, spectral_entropy, and d_eff
+
 ## [1.5.1] - 2026-01-28
 
 ### Added

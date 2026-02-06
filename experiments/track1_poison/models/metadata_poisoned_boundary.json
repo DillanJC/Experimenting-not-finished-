@@ -1,0 +1,14 @@
+{
+  "model_name": "poisoned_boundary",
+  "train_accuracy": 0.9351535836177475,
+  "test_accuracy": 0.9090909090909091,
+  "n_train": 879,
+  "n_test": 220,
+  "coefficients_shape": [
+    1,
+    256
+  ],
+  "intercept": -0.7605634918275627,
+  "n_poisoned_train": 38,
+  "n_poisoned_test": 16
+}
